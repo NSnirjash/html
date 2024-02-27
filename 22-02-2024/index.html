@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <label for="">N</label>
+    <input type="number" id="number1"> <br>
+    <label for="">R</label>
+    <textarea name="" id="number2" cols="30" rows="10"></textarea> <br>
+    <input type="submit" value="sum" onclick="doSum()"><br>
+    <input type="submit" value="subtraction" onclick="doSubtraction()"><br>
+    <input type="submit" value="Multiply" onclick="doMultiply()"><br>
+    <input type="submit" value="division" onclick="doDivision()">
+
+    <script>
+        function doSum(){
+            let Nirjash=document.getElementById('number1').value;
+            let Razu=document.getElementById('number2').value;
+
+            let nu1toint=parseFloat(Nirjash);
+            let nu2toint=parseFloat(Razu);
+
+            let result=nu1toint+nu2toint
+
+            document.write(result);
+        }
+
+        function doSubtraction(){
+            let Nirjash=document.getElementById('number1').value;
+            let Razu=document.getElementById('number2').value;
+
+            let nu1toint=parseFloat(Nirjash);
+            let nu2toint=parseFloat(Razu);
+
+            let result=nu1toint-nu2toint
+
+            document.write(result);
+        }
+
+
+        function doMultiply(){
+            let Nirjash=document.getElementById('number1').value;
+            let Razu=document.getElementById('number2').value;
+
+            let nu1toint=parseFloat(Nirjash);
+            let nu2toint=parseFloat(Razu);
+
+            let result=nu1toint*nu2toint
+
+            document.write(result);
+        }
+            
+        function doDivision(){
+            let Nirjash=document.getElementById('number1').value;
+            let Razu=document.getElementById('number2').value;
+
+            let nu1toint=parseFloat(Nirjash);
+            let nu2toint=parseFloat(Razu);
+
+            let result=nu1toint/nu2toint
+
+            document.write(result);
+        }
+            
+            
+        
+
+
+    </script>
+</body>
+</html>
